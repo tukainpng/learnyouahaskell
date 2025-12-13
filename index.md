@@ -3,7 +3,7 @@ title: Learn You A Haskell For Good!
 ---
 <style>body{background-color: #67A7CD}</style>
 <div class="newsplash"
-style="width:880px;height:800px;margin:0px auto 0 auto;background-repeat:no-repeat;background-image:url(/assets/newsplash.png);position:relative;font-size:16px;color:white;text-shadow:#24536F -1px 1px 1px">
+style="width:880px;height:800px;margin:0px auto 0 auto;background-repeat:no-repeat;background-image:url(./pages/assets/newsplash.png);position:relative;font-size:16px;color:white;text-shadow:#24536F -1px 1px 1px">
 
 <div style="position:absolute;top:210px;left:440px;width:350px;height:235px;line-height:24px;">
 
@@ -22,11 +22,11 @@ class="nostarchlink">#haskell</a> where I go by the name BONUS.
 
 </div>
 
-<a href="/pages/faq"
+<a href="./pages/faq"
 style="display:block;text-indent:-9999px;position:absolute;width:265px;height:40px;top:630px;left:110px;">Got
 questions? Read the FAQ</a> <a href="http://nostarch.com/lyah.htm"
 style="display:block;text-indent:-9999px;position:absolute;width:167px;height:143px;top:572px;left:434px;">Buy
-it!</a> <a href="/pages/chapters"
+it!</a> <a href="./pages/chapters"
 style="display:block;text-indent:-9999px;position:absolute;width:167px;height:143px;top:572px;left:638px;">Read
 it online!</a>
 

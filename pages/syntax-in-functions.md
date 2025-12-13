@@ -7,7 +7,7 @@ title: Syntax in Functions
 
 <center>
 <a href="types-and-typeclasses" class="prevlink">Types and Typeclasses</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="recursion" class="nxtlink">Recursion</a>
 </center>
 
@@ -18,7 +18,7 @@ title: Syntax in Functions
 
 ## Pattern matching
 
-<img src="/assets/pattern.png" class="right"
+<img src="./assets/pattern.png" class="right"
 width="162" height="250" alt="four!" />
 
 This chapter will cover some of Haskell's cool syntactic constructs and
@@ -333,7 +333,7 @@ lists, you can't do that.
 
 ## Guards, guards!
 
-<img src="/assets/guards.png" class="left"
+<img src="./assets/guards.png" class="left"
 width="83" height="180" alt="guards" />
 
 Whereas patterns are a way of making sure a value conforms to some form
@@ -596,7 +596,7 @@ cylinder r h =
     in  sideArea + 2 * topArea
 ```
 
-<img src="/assets/letitbe.png" class="right"
+<img src="./assets/letitbe.png" class="right"
 width="215" height="240" alt="let it be" />
 
 The form is <span class="fixed">let &lt;bindings&gt; in
@@ -707,7 +707,7 @@ its name and type declaration and to some that's more readable.
 
 ## Case expressions
 
-<img src="/assets/case.png" class="right"
+<img src="./assets/case.png" class="right"
 width="185" height="164" alt="case" />
 
 Many imperative languages (C, C++, Java, etc.) have case syntax and if

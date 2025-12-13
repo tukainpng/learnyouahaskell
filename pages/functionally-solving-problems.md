@@ -9,7 +9,7 @@ title: Functionally Solving Problems
 
 <center>
 <a href="input-and-output" class="prevlink">Input and Output</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="functors-applicative-functors-and-monoids" class="nxtlink">Functors, Applicative Functors and Monoids</a>
 </center>
 
@@ -55,7 +55,7 @@ resulting number back onto the stack. When you reach the end of the
 expression, you should be left with a single number if the expression
 was well-formed and that number represents the result.
 
-<img src="/assets/rpn.png" class="center"
+<img src="./assets/rpn.png" class="center"
 width="626" height="224" alt="this expression" />
 
 Let's go over the expression <span class="fixed">10 4 3 + 2 \* -</span>
@@ -103,7 +103,7 @@ us a whole lot about the function, due to the very strong type system.
 
 
 
-<img src="/assets/calculator.png" class="left"
+<img src="./assets/calculator.png" class="left"
 width="220" height="190" alt="HA HA HA" />
 
 Cool. When implementing a solution to a problem in Haskell, it's also
@@ -342,7 +342,7 @@ the optimal path to take so that you get to London as fast as you can!
 You start on the left side and can either cross to the other main road
 or go forward.
 
-<img src="/assets/roads.png" class="center"
+<img src="./assets/roads.png" class="center"
 width="780" height="237" alt="Heathrow - London" />
 
 As you can see in the picture, the shortest path from Heathrow to London
@@ -404,7 +404,7 @@ of say that we're pretty sure.
 That's not a good solution then. Here's a simplified picture of our road
 system:
 
-<img src="/assets/roads_simple.png" class="center"
+<img src="./assets/roads_simple.png" class="center"
 width="685" height="245" alt="roads" />
 
 Alright, can you figure out what the shortest path to the first
@@ -632,7 +632,7 @@ roadStep (pathA, pathB) (Section a b c) =
     in  (newPathToA, newPathToB)
 ```
 
-<img src="/assets/guycar.png" class="right"
+<img src="./assets/guycar.png" class="right"
 width="420" height="381" alt="this is you" />
 
 What's going on here? First, calculate the optimal price on road A based

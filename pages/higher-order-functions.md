@@ -7,14 +7,14 @@ title: Higher order functions
 
 <center>
 <a href="recursion" class="prevlink">Recursion</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="modules" class="nxtlink">Modules</a>
 </center>
 
 
 
 
-<img src="/assets/sun.png" class="right"
+<img src="./assets/sun.png" class="right"
 width="203" height="183" alt="sun" />
 
 Haskell functions can take functions as parameters and return functions
@@ -52,7 +52,7 @@ ghci> (max 4) 5
 5
 ```
 
-<img src="/assets/curry.png" class="left"
+<img src="./assets/curry.png" class="left"
 width="160" height="238" alt="haskell curry" />
 
 Putting a space between two things is simply **function application**.
@@ -218,7 +218,7 @@ applyTwice :: (a -> a) -> a -> a
 applyTwice f x = f (f x)
 ```
 
-<img src="/assets/bonus.png" class="right"
+<img src="./assets/bonus.png" class="right"
 width="166" height="190" alt="rocktopus" />
 
 First of all, notice the type declaration. Before, we didn't need
@@ -483,7 +483,7 @@ quicksort (x:xs) =
     in  smallerSorted ++ [x] ++ biggerSorted
 ```
 
-<img src="/assets/map.png" class="left" width="210"
+<img src="./assets/map.png" class="left" width="210"
 height="115" alt="map" />
 
 Mapping and filtering is the bread and butter of every functional
@@ -663,7 +663,7 @@ list returns a function that's equivalent to
 
 ## Lambdas
 
-<img src="/assets/lambda.png" class="right"
+<img src="./assets/lambda.png" class="right"
 width="203" height="230" alt="lambda" />
 
 Lambdas are basically anonymous functions that are used because we need
@@ -692,7 +692,7 @@ expression <span class="fixed">(\xs -&gt; length xs &gt; 15)</span> returns
 a function that tells us whether the length of the list passed to it is
 greater than 15.
 
-<img src="/assets/lamb.png" class="left"
+<img src="./assets/lamb.png" class="left"
 width="200" height="134" alt="lamb" />
 
 People who are not well acquainted with how currying and partial
@@ -767,7 +767,7 @@ to a function as a parameter.
 
 ## Only folds and horses
 
-<img src="/assets/origami.png" class="right"
+<img src="./assets/origami.png" class="right"
 width="220" height="221" alt="folded bird" />
 
 Back when we were dealing with recursion, we noticed a theme throughout
@@ -809,7 +809,7 @@ ghci> sum' [3,5,2,1]
 11
 ```
 
-<img src="/assets/foldl.png" class="left"
+<img src="./assets/foldl.png" class="left"
 width="172" height="348" alt="foldl" />
 
 Let's take an in-depth look into how this fold happens.
@@ -920,7 +920,7 @@ x\]) \[\] xs</span>, but the thing is that the
 <span class="fixed">:</span>, so we usually use right folds when we're
 building up new lists from a list.
 
-<img src="/assets/washmachine.png" class="right"
+<img src="./assets/washmachine.png" class="right"
 width="250" height="205" alt="fold this up!" />
 
 If you reverse a list, you can do a right fold on it just like you would
@@ -1081,7 +1081,7 @@ out how it's defined:
 f $ x = f x
 ```
 
-<img src="/assets/dollar.png" class="left"
+<img src="./assets/dollar.png" class="left"
 width="180" height="136" alt="dollar" />
 
 What the heck? What is this useless operator? It's just function
@@ -1133,7 +1133,7 @@ ghci> map ($ 3) [(4+), (10*), (^2), sqrt]
 ## Function composition
 
 In mathematics, function composition is defined like this: ![ (f . g)(x)
-= f(g(x))](/assets/composition.png), meaning that
+= f(g(x))](./assets/composition.png), meaning that
 composing two functions produces a new function that, when called with a
 parameter, say, *x* is the equivalent of calling *g* with the parameter
 *x* and then calling the *f* with that result.
@@ -1147,7 +1147,7 @@ which is defined like so:
 f . g = \x -> f (g x)
 ```
 
-<img src="/assets/notes.png" class="left"
+<img src="./assets/notes.png" class="left"
 width="230" height="198" alt="notes" />
 
 Mind the type declaration. <span class="fixed">f</span> must take as its

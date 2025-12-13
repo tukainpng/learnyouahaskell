@@ -7,7 +7,7 @@ title: Functors, Applicative Functors and Monoids
 
 <center>
 <a href="functionally-solving-problems" class="prevlink">Functionally Solving Problems</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="a-fistful-of-monads" class="nxtlink">A Fistful of Monads</a>
 </center>
 
@@ -44,7 +44,7 @@ of like socks.
 
 ## Functors redux
 
-<img src="/assets/frogtor.png" class="right"
+<img src="./assets/frogtor.png" class="right"
 width="369" height="243" alt="frogs dont even need money" />
 
 We've already talked about functors in [their own little
@@ -169,7 +169,7 @@ main = do line <- fmap reverse getLine
           putStrLn $ "Yes, you really said" ++ line ++ " backwards!"
 ```
 
-<img src="/assets/alien.png" class="left"
+<img src="./assets/alien.png" class="left"
 width="262" height="212" alt="w00ooOoooOO" />
 
 Just like when we <span class="fixed">fmap</span>
@@ -366,7 +366,7 @@ can be functors. The function being mapped over a computation results in
 the same computation but the result of that computation is modified with
 the function.
 
-<img src="/assets/lifter.png" class="right"
+<img src="./assets/lifter.png" class="right"
 width="443" height="450"
 alt="lifting a function is easier than lifting a million pounds" />
 
@@ -528,7 +528,7 @@ trivial. So from these two equations in the implementation for
 <span class="fixed">fmap</span>, we see that the law
 <span class="fixed">fmap id = id</span> holds.
 
-<img src="/assets/justice.png" class="left"
+<img src="./assets/justice.png" class="left"
 width="345" height="428" alt="justice is blind, but so is my dog" />
 
 *The second law says that composing two functions and then mapping the
@@ -729,7 +729,7 @@ with composition.
 
 ## Applicative functors
 
-<img src="/assets/present.png" class="right"
+<img src="./assets/present.png" class="right"
 width="302" height="284" alt="disregard this analogy" />
 
 In this section, we'll take a look at applicative functors, which are
@@ -964,7 +964,7 @@ ghci> pure (+) <*> Nothing <*> Just 5
 Nothing
 ```
 
-<img src="/assets/whale.png" class="right"
+<img src="./assets/whale.png" class="right"
 width="214" height="177" alt="whaale" />
 
 What's going on here? Let's take a look, step by step.
@@ -1223,7 +1223,7 @@ instance Applicative IO where
         return (f x)
 ```
 
-<img src="/assets/knight.png" class="left"
+<img src="./assets/knight.png" class="left"
 width="195" height="458" alt="ahahahah!" />
 
 Since <span class="fixed">pure</span> is all about putting a value in a
@@ -1384,7 +1384,7 @@ ghci> (\x y z -> [x,y,z]) <$> (+3) <*> (*2) <*> (/2) $ 5
 [8.0,10.0,2.5]
 ```
 
-<img src="/assets/jazzb.png" class="right"
+<img src="./assets/jazzb.png" class="right"
 width="400" height="230" alt="SLAP" />
 
 Same here. We create a function that will call the function
@@ -1828,7 +1828,7 @@ advantage of the semantics of each one.
 
 ## The newtype keyword
 
-<img src="/assets/maoi.png" class="left"
+<img src="./assets/maoi.png" class="left"
 width="107" height="202" alt="why_ so serious?" />
 
 So far, we've learned how to make our own algebraic data types by using
@@ -2010,7 +2010,7 @@ place of <span class="fixed">f</span> in the definition of the
 fmap :: (a -> b) -> Maybe a -> Maybe b
 ```
 
-<img src="/assets/krakatoa.png" class="right"
+<img src="./assets/krakatoa.png" class="right"
 width="322" height="280" alt="wow, very evil" />
 
 Isn't that just peachy? Now what if we wanted to make the tuple an
@@ -2169,7 +2169,7 @@ ghci> helloMe undefined
 "hello"
 ```
 
-<img src="/assets/shamrock.png" class="right"
+<img src="./assets/shamrock.png" class="right"
 width="184" height="230" alt="top of the mornin to ya!!!" />
 
 It worked! Hmmm, why is that? Well, like we've said, when we use
@@ -2280,7 +2280,7 @@ for the *data* keyword.
 
 ## Monoids
 
-<img src="/assets/pirateship.png" class="right"
+<img src="./assets/pirateship.png" class="right"
 width="460" height="417"
 alt="wow this is pretty much the gayest pirate ship ever" />
 
@@ -2379,7 +2379,7 @@ class Monoid m where
     mconcat = foldr mappend mempty
 ```
 
-<img src="/assets/balloondog.png" class="right"
+<img src="./assets/balloondog.png" class="right"
 width="260" height="326" alt="woof dee do!!!" />
 
 The <span class="fixed">Monoid</span> type class is defined in
@@ -2494,7 +2494,7 @@ ghci> mempty :: [a]
 []
 ```
 
-<img src="/assets/smug.png" class="left"
+<img src="./assets/smug.png" class="left"
 width="157" height="144" alt="smug as hell" />
 
 Notice that in the last line, we had to write an explicit type
@@ -2761,7 +2761,7 @@ instance Monoid Ordering where
     GT `mappend` _ = GT
 ```
 
-<img src="/assets/bear.png" class="right"
+<img src="./assets/bear.png" class="right"
 width="330" height="339"
 alt="did anyone ORDER pizza?!?! I can&#39;t BEAR these puns!" />
 
@@ -3142,7 +3142,7 @@ instance F.Foldable Tree where
                              F.foldMap f r
 ```
 
-<img src="/assets/accordion.png" class="right"
+<img src="./assets/accordion.png" class="right"
 width="366" height="280" alt="find the visual pun or whatever" />
 
 We think like this: if we are provided with a function that takes an

@@ -1,7 +1,7 @@
 ---
 title: FAQ
 ---
-<img src="/assets/turtle.png" class="right"
+<img src="./assets/turtle.png" class="right"
 width="349" height="204" alt="turtle???" />
 
 ## Can I put this tutorial on my site or change it or whatever?

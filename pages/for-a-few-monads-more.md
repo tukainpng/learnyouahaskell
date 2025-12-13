@@ -3,14 +3,14 @@ title: For a Few Monads More
 ---
 <center>
 <a href="a-fistful-of-monads" class="prevlink">A Fistful of Monads</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="zippers" class="nxtlink">Zippers</a>
 </center>
 
 
 
 
-<img src="/assets/clint.png" class="right"
+<img src="./assets/clint.png" class="right"
 width="189" height="400"
 alt="there are two kinds of people in the world, my friend. those who learn them a haskell and those who have the job of coding java" />
 
@@ -90,7 +90,7 @@ ghci> isBigGang 30
 (True,"Compared gang size to 9.")
 ```
 
-<img src="/assets/tuco.png" class="left"
+<img src="./assets/tuco.png" class="left"
 width="196" height="280"
 alt="when you have to poop, poop, don&#39;t talk" />
 
@@ -342,7 +342,7 @@ instance (Monoid w) => Monad (Writer w) where
     (Writer (x,v)) >>= f = let (Writer (y, v')) = f x in Writer (y, v `mappend` v')
 ```
 
-<img src="/assets/angeleyes.png" class="right"
+<img src="./assets/angeleyes.png" class="right"
 width="383" height="248"
 alt="when you have to poop, poop, don&#39;t talk" />
 
@@ -681,7 +681,7 @@ It's inefficient because it ends up associating the use of
 
 ### Difference lists
 
-<img src="/assets/cactus.png" class="left"
+<img src="./assets/cactus.png" class="left"
 width="147" height="300" alt="cactuses" />
 
 Because lists can sometimes be inefficient when repeatedly appended in
@@ -875,7 +875,7 @@ head. Enjoy!
 
 ## Reader? Ugh, not this joke again.
 
-<img src="/assets/revolver.png" class="left"
+<img src="./assets/revolver.png" class="left"
 width="280" height="106" alt="bang youre dead" />
 
 In the [chapter about
@@ -1028,7 +1028,7 @@ make sure that it all works out.
 
 ## Tasteful stateful computations
 
-<img src="/assets/texas.png" class="left"
+<img src="./assets/texas.png" class="left"
 width="244" height="230" alt="don&#39;t jest with texas" />
 
 Haskell is a pure language and because of that, our programs are made of
@@ -1237,7 +1237,7 @@ context. So <span class="fixed">return</span> will make a stateful
 computation that presents a certain value as the result and keeps the
 state unchanged.
 
-<img src="/assets/badge.png" class="right"
+<img src="./assets/badge.png" class="right"
 width="182" height="160" alt="im a cop" />
 
 What about <span class="fixed">&gt;&gt;=</span>? Well, the result of feeding
@@ -1645,7 +1645,7 @@ Let's see what they are then!
 
 ### liftM and friends
 
-<img src="/assets/wolf.png" class="right"
+<img src="./assets/wolf.png" class="right"
 width="394" height="222" alt="im a cop too" />
 
 When we started our journey to the top of Monad Mountain, we first
@@ -1972,7 +1972,7 @@ joinedMaybes = do
     m
 ```
 
-<img src="/assets/tipi.png" class="right"
+<img src="./assets/tipi.png" class="right"
 width="253" height="379" alt="im a cop too as well also" />
 
 Perhaps the most interesting thing about <span class="fixed">join</span>
@@ -2225,7 +2225,7 @@ because then you log whatever you want as your fold goes along its way.
 
 ### Making a safe RPN calculator
 
-<img src="/assets/miner.png" class="left"
+<img src="./assets/miner.png" class="left"
 width="280" height="396" alt="i&#39;ve found yellow!" />
 
 When we were solving the problem of [implementing a RPN
@@ -2502,7 +2502,7 @@ canReachIn x start end = end `elem` inMany x start
 
 ## Making monads
 
-<img src="/assets/spearhead.png" class="center"
+<img src="./assets/spearhead.png" class="center"
 width="780" height="244" alt="kewl" />
 
 In this section, we're going to look at an example of how a type gets
@@ -2641,7 +2641,7 @@ happen. <span class="fixed">'c'</span> and
 <span class="fixed">'d'</span> are also equally likely to happen. Here's
 a picture of a probability list that models this scenario:
 
-<img src="/assets/prob.png" class="left"
+<img src="./assets/prob.png" class="left"
 width="456" height="142" alt="probs" />
 
 What are the chances for each of these letters to occur? If we were to
@@ -2698,7 +2698,7 @@ instance Monad Prob where
     fail _ = Prob []
 ```
 
-<img src="/assets/ride.png" class="right"
+<img src="./assets/ride.png" class="right"
 width="177" height="406" alt="ride em cowboy" />
 
 Because we already did all the hard work, the instance is very simple.

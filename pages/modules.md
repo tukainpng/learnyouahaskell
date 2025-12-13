@@ -7,7 +7,7 @@ title: Modules
 
 <center>
 <a href="higher-order-functions" class="prevlink">Higher Order Functions</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="making-our-own-types-and-typeclasses" class="nxtlink">Making Our Own Types and Typeclasses</a>
 </center>
 
@@ -18,7 +18,7 @@ title: Modules
 
 ## Loading modules
 
-<img src="/assets/modules.png" class="right"
+<img src="./assets/modules.png" class="right"
 width="230" height="162" alt="modules" />
 
 A Haskell module is a collection of related functions, types and
@@ -220,7 +220,7 @@ When we transpose these three lists, the third powers are then in the
 first row, the second powers in the second one and so on. Mapping
 <span class="fixed">sum</span> to that produces our desired result.
 
-<img src="/assets/legolists.png" class="left"
+<img src="./assets/legolists.png" class="left"
 width="230" height="212" alt="shopping lists" />
 
 <span class="label function">foldl'</span> and
@@ -900,7 +900,7 @@ with *By* functions that take an ordering function, you usually do
 
 ## Data.Char
 
-<img src="/assets/legochar.png" class="right"
+<img src="./assets/legochar.png" class="right"
 width="230" height="323" alt="lego char" />
 
 The <span class="fixed">Data.Char</span> module does what its name
@@ -1238,7 +1238,7 @@ ghci> findKey "wilma" phoneBook
 Nothing
 ```
 
-<img src="/assets/legomap.png" class="left"
+<img src="./assets/legomap.png" class="left"
 width="214" height="240" alt="legomap" />
 
 Works like a charm! If we have the girl's phone number, we
@@ -1496,7 +1496,7 @@ functions in the
 
 ## Data.Set
 
-<img src="/assets/legosets.png" class="right"
+<img src="./assets/legosets.png" class="right"
 width="150" height="236" alt="legosets" />
 
 The <span class="fixed">Data.Set</span> module offers us, well, sets.
@@ -1652,7 +1652,7 @@ elements, while <span class="fixed">setNub</span> does not.
 
 ## Making our own modules
 
-<img src="/assets/making_modules.png" class="right"
+<img src="./assets/making_modules.png" class="right"
 width="345" height="224" alt="making modules" />
 
 We've looked at some cool modules so far, but how do we make our own

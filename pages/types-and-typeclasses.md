@@ -7,7 +7,7 @@ title: Types and Typeclasses
 
 <center>
 <a href="starting-out" class="prevlink">Starting Out</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="syntax-in-functions" class="nxtlink">Syntax in Functions</a>
 </center>
 
@@ -18,7 +18,7 @@ title: Types and Typeclasses
 
 ## Believe the type
 
-<img src="/assets/cow.png" class="left" width="180"
+<img src="./assets/cow.png" class="left" width="180"
 height="127" alt="moo" />
 
 Previously we mentioned that Haskell has a static type system. The type
@@ -59,7 +59,7 @@ ghci> :t 4 == 5
 4 == 5 :: Bool
 ```
 
-<img src="/assets/bomb.png" class="right"
+<img src="./assets/bomb.png" class="right"
 width="171" height="144" alt="bomb" /> Here we see that doing
 <span class="fixed">:t</span> on an expression prints out the expression
 followed by <span class="fixed">::</span> and its type.
@@ -202,7 +202,7 @@ ghci> :t head
 head :: [a] -> a
 ```
 
-<img src="/assets/box.png" class="left" width="130"
+<img src="./assets/box.png" class="left" width="130"
 height="93" alt="box" /> Hmmm! What is this
 <span class="fixed">a</span>? Is it a type? Remember that we previously
 stated that types are written in capital case, so it can't exactly be a
@@ -239,7 +239,7 @@ the same.
 
 ## Typeclasses 101
 
-<img src="/assets/classes.png" class="right"
+<img src="./assets/classes.png" class="right"
 width="210" height="158" alt="class" />
 
 A typeclass is a sort of interface that defines some behavior. If a type

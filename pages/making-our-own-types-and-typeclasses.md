@@ -7,7 +7,7 @@ title: Making Our Own Types and Typeclasses
 
 <center>
 <a href="modules" class="prevlink">Modules</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="input-and-output" class="nxtlink">Input and Output</a>
 </center>
 
@@ -50,7 +50,7 @@ type as being defined like this:
 data Int = -2147483648 | -2147483647 | ... | -1 | 0 | 1 | 2 | ... | 2147483647
 ```
 
-<img src="/assets/caveman.png" class="left"
+<img src="./assets/caveman.png" class="left"
 width="220" height="215" alt="caveman" />
 
 The first and last value constructors are the minimum and maximum
@@ -288,7 +288,7 @@ uses our module can't pattern match against the value constructors.
 
 ## Record syntax
 
-<img src="/assets/record.png" class="right"
+<img src="./assets/record.png" class="right"
 width="208" height="97" alt="record" />
 
 OK, we've been tasked with creating a data type that describes a person.
@@ -441,7 +441,7 @@ a look at how a type we've already met is implemented.
 data Maybe a = Nothing | Just a
 ```
 
-<img src="/assets/yeti.png" class="left"
+<img src="./assets/yeti.png" class="left"
 width="209" height="260" alt="yeti" />
 
 The <span class="fixed">a</span> here is the type parameter. And because
@@ -579,7 +579,7 @@ ghci> :t Car "Ford" "Mustang" "nineteen sixty seven"
 Car "Ford" "Mustang" "nineteen sixty seven" :: Car [Char] [Char] [Char]
 ```
 
-<img src="/assets/meekrat.png" class="right"
+<img src="./assets/meekrat.png" class="right"
 width="150" height="267" alt="meekrat" />
 
 In real life though, we'd end up using <span class="fixed">Car String
@@ -695,7 +695,7 @@ Vector 148 666 222
 
 ## Derived instances
 
-<img src="/assets/gob.png" class="right"
+<img src="./assets/gob.png" class="right"
 width="112" height="350" alt="gob" />
 
 In the [Typeclasses 101](types-and-typeclasses#typeclasses-101) section,
@@ -1010,7 +1010,7 @@ for <span class="fixed">\[Char\]</span>.
  
 ```
 
-<img src="/assets/chicken.png" class="left"
+<img src="./assets/chicken.png" class="left"
 width="169" height="225" alt="chicken" />
 
 We've introduced the *type* keyword. The keyword might be misleading to
@@ -1299,7 +1299,7 @@ we have information about the failure in our result type.
 
 ## Recursive data structures
 
-<img src="/assets/thefonz.png" class="right"
+<img src="./assets/thefonz.png" class="right"
 width="168" height="301" alt="the fonz" />
 
 As we've seen, a constructor in an algebraic data type can have several
@@ -1453,7 +1453,7 @@ stuff like that, normal prefix constructors or stuff like
 are basically constructors for the numeric and character types,
 respectively.
 
-<img src="/assets/binarytree.png" class="left"
+<img src="./assets/binarytree.png" class="left"
 width="323" height="225" alt="binary search tree" />
 
 Now, we're going to implement a *binary search tree*. If you're not
@@ -1603,7 +1603,7 @@ boolean values and weekday enumerations to binary search trees and more!
 
 ## Typeclasses 102
 
-<img src="/assets/trafficlight.png" class="right"
+<img src="./assets/trafficlight.png" class="right"
 width="175" height="480" alt="tweet" />
 
 So far, we've learned about some of the standard Haskell typeclasses and
@@ -1926,7 +1926,7 @@ declaration of a function. I think that's pretty cool.
 
 ## A yes-no typeclass
 
-<img src="/assets/yesno.png" class="left"
+<img src="./assets/yesno.png" class="left"
 width="201" height="111" alt="yesno" />
 
 In JavaScript and some other weakly typed languages, you can put almost
@@ -2107,7 +2107,7 @@ class Functor f where
     fmap :: (a -> b) -> f a -> f b
 ```
 
-<img src="/assets/functor.png" class="right"
+<img src="./assets/functor.png" class="right"
 width="220" height="441" alt="I AM FUNCTOOOOR!!!" />
 
 Alright. We see that it defines one function,
@@ -2352,7 +2352,7 @@ detail in one of the next chapters.
 
 ## Kinds and some type-foo
 
-<img src="/assets/typefoo.png" class="right"
+<img src="./assets/typefoo.png" class="right"
 width="287" height="400" alt="TYPE FOO MASTER" />
 
 Type constructors take other types as parameters to eventually produce

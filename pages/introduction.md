@@ -3,7 +3,7 @@ title: Introduction
 ---
 
 <center>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="starting-out" class="nxtlink">Starting Out</a>
 </center>
 
@@ -27,7 +27,7 @@ came falling into place. So this is an attempt at adding another useful
 resource for learning Haskell so you have a bigger chance of finding one
 you like.
 
-<img src="/assets/bird.png" class="left"
+<img src="./assets/bird.png" class="left"
 width="230" height="192" alt="bird" />
 
 This tutorial is aimed at people who have experience in imperative
@@ -53,7 +53,7 @@ you to think differently, which brings us to the next section …
 
 ## So what's Haskell?
 
-<img src="/assets/fx.png" class="right" width="150"
+<img src="./assets/fx.png" class="right" width="150"
 height="146" alt="fx" /> Haskell is a *purely functional programming
 language*. In imperative languages you get things done by giving the
 computer a sequence of tasks and then it executes them. While executing
@@ -79,7 +79,7 @@ but it also allows you to easily deduce (and even prove) that a function
 is correct and then build more complex functions by gluing simple
 functions together.
 
-<img src="/assets/lazy.png" class="right"
+<img src="./assets/lazy.png" class="right"
 width="240" height="209" alt="lazy" /> Haskell is *lazy*. That means
 that unless specifically told otherwise, Haskell won't execute functions
 and calculate things until it's really forced to show you a result. That
@@ -106,7 +106,7 @@ That way when you want something from a lazy language you can just take
 some initial data and efficiently transform and mend it so it resembles
 what you want at the end.
 
-<img src="/assets/boat.png" class="right"
+<img src="./assets/boat.png" class="right"
 width="160" height="153" alt="boat" /> Haskell is *statically typed*.
 When you compile your program, the compiler knows which piece of code is
 a number, which is a string and so on. That means that a lot of possible

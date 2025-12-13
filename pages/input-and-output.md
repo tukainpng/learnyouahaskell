@@ -7,14 +7,14 @@ title: Input and Output
 
 <center>
 <a href="making-our-own-types-and-typeclasses" class="prevlink">Making Our Own Types and Typeclasses</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="functionally-solving-problems" class="nxtlink">Functionally Solving Problems</a>
 </center>
 
 
 
 
-<img src="/assets/dognap.png" class="right"
+<img src="./assets/dognap.png" class="right"
 width="261" height="382" alt="poor dog" />
 
 We've mentioned that Haskell is a purely functional language. Whereas in
@@ -56,7 +56,7 @@ while efficiently communicating with the outside world.
 
 ## Hello, world!
 
-<img src="/assets/helloworld.png" class="left"
+<img src="./assets/helloworld.png" class="left"
 width="223" height="179" alt="HELLO!" />
 
 Up until now, we've always loaded our functions into GHCI to test them
@@ -179,7 +179,7 @@ ghci> :t getLine
 getLine :: IO String
 ```
 
-<img src="/assets/luggage.png" class="left"
+<img src="./assets/luggage.png" class="left"
 width="204" height="200" alt="luggage" />
 
 Aha, o-kay. <span class="fixed">getLine</span> is an I/O action that
@@ -876,7 +876,7 @@ action will, when performed, print beautiful poetry to your terminal.
 
 ## Files and streams
 
-<img src="/assets/streams.png" class="right"
+<img src="./assets/streams.png" class="right"
 width="464" height="322" alt="streams" />
 
 <span class="fixed">getChar</span> is an I/O action that reads a single
@@ -1280,7 +1280,7 @@ type FilePath = String
 data IOMode = ReadMode | WriteMode | AppendMode | ReadWriteMode
 ```
 
-<img src="/assets/file.png" class="left"
+<img src="./assets/file.png" class="left"
 width="232" height="340" alt="A FILE IN A CAKE!!!" />
 
 Just like our type that represents the seven possible values for the
@@ -1379,7 +1379,7 @@ withFile' path mode f = do
     return result
 ```
 
-<img src="/assets/edd.png" class="right"
+<img src="./assets/edd.png" class="right"
 width="246" height="360" alt="butter toast" />
 
 We know the result will be an I/O action so we can just start off with a
@@ -1723,7 +1723,7 @@ Take salad out of the oven
 
 ## Command line arguments
 
-<img src="/assets/arguments.png" class="right"
+<img src="./assets/arguments.png" class="right"
 width="449" height="380" alt="COMMAND LINE ARGUMENTS!!! ARGH" />
 
 Dealing with command line arguments is pretty much a necessity if you
@@ -2001,7 +2001,7 @@ remove [fileName, numberString] = do
     renameFile tempName fileName
 ```
 
-<img src="/assets/salad.png" class="left"
+<img src="./assets/salad.png" class="left"
 width="143" height="200" alt="fresh baked salad" />
 
 To summarize our solution: we made a dispatch association that maps from
@@ -2060,7 +2060,7 @@ exceptions, which we will meet soon.
 
 ## Randomness
 
-<img src="/assets/random.png" class="right"
+<img src="./assets/random.png" class="right"
 width="358" height="362"
 alt="this picture is the ultimate source of randomness and wackiness" />
 
@@ -2433,7 +2433,7 @@ askForNumber gen = do
         askForNumber newGen
 ```
 
-<img src="/assets/jackofdiamonds.png" class="left"
+<img src="./assets/jackofdiamonds.png" class="left"
 width="313" height="280" alt="jack of diamonds" />
 
 We make a function <span class="fixed">askForNumber</span>, which takes
@@ -2531,7 +2531,7 @@ that we can reuse easily.
 
 ## Bytestrings
 
-<img src="/assets/chainchomp.png" class="right"
+<img src="./assets/chainchomp.png" class="right"
 width="306" height="390"
 alt="like normal string, only they byte ... what a pedestrian pun this is" />
 
@@ -2777,7 +2777,7 @@ bytestrings if the performance is not satisfactory.
 
 ## Exceptions
 
-<img src="/assets/timber.png" class="left"
+<img src="./assets/timber.png" class="left"
 width="308" height="394" alt="timberr!!!!" />
 
 All languages have procedures, functions, and pieces of code that might
@@ -2835,7 +2835,7 @@ ghci> head []
 *** Exception: Prelude.head: empty list
 ```
 
-<img src="/assets/police.png" class="left"
+<img src="./assets/police.png" class="left"
 width="241" height="328"
 alt="Stop right there, criminal scum! Nobody breaks the law on my watch! Now pay your fine or it&#39;s off to jail." />
 
@@ -2942,7 +2942,7 @@ result is an I/O action that will either act the same as the first
 parameter or it will do what the handler tells it if the first I/O
 action throws an exception.
 
-<img src="/assets/puppy.png" class="right"
+<img src="./assets/puppy.png" class="right"
 width="334" height="240" alt="non sequitor" />
 
 If you're familiar with *try-catch* blocks in languages like Java or

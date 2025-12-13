@@ -80,7 +80,7 @@ pre {
     padding:10px;
     background-color:#ffc;
     margin-bottom:25px;
-    background-image:url(/assets/note.jpg);
+    background-image:url(note.jpg);
 }
 .label {
     white-space:nowrap;
@@ -117,7 +117,7 @@ pre {
     margin:0px auto;
 }
 .introcontent {
-    background-image:url(/assets/bg.png);
+    background-image:url(bg.png);
 }
 .bgwrapper {
     margin-top:50px;
@@ -186,13 +186,13 @@ pre {
 }
 .prevlink {
     padding-left:20px;
-    background-image:url(/assets/prv.png);
+    background-image:url(prv.png);
     background-position:0px 3px;
     background-repeat:no-repeat;
 }
 .nxtlink {
     padding-right:20px;
-    background-image:url(/assets/nxt.png);
+    background-image:url(nxt.png);
     background-position:top right;
     background-repeat:no-repeat;
 }

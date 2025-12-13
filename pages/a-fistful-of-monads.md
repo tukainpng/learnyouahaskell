@@ -8,7 +8,7 @@ title: A Fistful of Monads
 <center>
 <a href="functors-applicative-functors-and-monoids"
   class="prevlink">Functors, Applicative Functors and Monoids</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
  <a href="for-a-few-monads-more" class="nxtlink">For a Few Monads More</a>
 </center>
 
@@ -24,7 +24,7 @@ In this chapter, we'll learn about monads, which are just beefed up
 applicative functors, much like applicative functors are only beefed up
 functors.
 
-<img src="/assets/smugpig.png" class="right"
+<img src="./assets/smugpig.png" class="right"
 width="307" height="186" alt="more cool than u" />
 
 When we started off with functors, we saw that it's possible to map
@@ -134,7 +134,7 @@ but you'll see that it's easy as one two three.
 
 ## Getting our feet wet with Maybe
 
-<img src="/assets/buddha.png" class="left"
+<img src="./assets/buddha.png" class="left"
 width="302" height="387" alt="monads, grasshoppa" />
 
 Now that we have a vague idea of what monads are about, let's see if we
@@ -343,7 +343,7 @@ class Monad m where
     fail msg = error msg
 ```
 
-<img src="/assets/kid.png" class="right"
+<img src="./assets/kid.png" class="right"
 width="363" height="451" alt="this is you on monads" />
 
 Let's start with the first line. It says <span class="fixed">class Monad
@@ -380,7 +380,7 @@ and puts it in a context.
 
 
 
-<img src="/assets/tur2.png" class="left"
+<img src="./assets/tur2.png" class="left"
 width="169" height="145" alt="hmmm yaes" />
 
 The next function is <span class="fixed">&gt;&gt;=</span>, or bind. It's
@@ -458,7 +458,7 @@ without pattern-matching. And we still didn't lose the context of our
 
 ## Walk the line
 
-<img src="/assets/pierre.png" class="left"
+<img src="./assets/pierre.png" class="left"
 width="374" height="405" alt="pierre" />
 
 Now that we know how to feed a <span class="fixed">Maybe a</span> value
@@ -716,7 +716,7 @@ ghci> return (0,0) >>= landLeft 1 >>= landRight 4 >>= landLeft (-1) >>= landRigh
 Nothing
 ```
 
-<img src="/assets/banana.png" class="right"
+<img src="./assets/banana.png" class="right"
 width="262" height="130" alt="iama banana" />
 
 Awesome. The final result represents failure, which is what we expected.
@@ -835,7 +835,7 @@ routine = case landLeft 1 (0,0) of
             Just pole3 -> landLeft 1 pole3
 ```
 
-<img src="/assets/centaur.png" class="right"
+<img src="./assets/centaur.png" class="right"
 width="297" height="331" alt="john joe glanton" />
 
 We land a bird on the left and then we examine the possibility of
@@ -958,7 +958,7 @@ foo = do
     Just (show x ++ y)
 ```
 
-<img src="/assets/owld.png" class="right"
+<img src="./assets/owld.png" class="right"
 width="269" height="348" alt="90s owl" />
 
 It would seem as though we've gained the ability to temporarily extract
@@ -1192,7 +1192,7 @@ neat.
 
 ## The list monad
 
-<img src="/assets/deadcat.png" class="left"
+<img src="./assets/deadcat.png" class="left"
 width="235" height="230" alt="dead cat" />
 
 So far, we've seen how <span class="fixed">Maybe</span> values can be
@@ -1313,7 +1313,7 @@ ghci> [1,2] >>= \n -> ['a','b'] >>= \ch -> return (n,ch)
 [(1,'a'),(1,'b'),(2,'a'),(2,'b')]
 ```
 
-<img src="/assets/concatmap.png" class="left"
+<img src="./assets/concatmap.png" class="left"
 width="399" height="340" alt="concatmap" />
 
 The list <span class="fixed">\[1,2\]</span> gets bound to
@@ -1522,7 +1522,7 @@ three moves. We'll just use a pair of numbers to represent the knight's
 position on the chess board. The first number will determine the column
 he's in and the second number will determine the row.
 
-<img src="/assets/chess.png" class="center"
+<img src="./assets/chess.png" class="center"
 width="760" height="447" alt="hee haw im a horse" />
 
 Let's make a type synonym for the knight's current position on the chess
@@ -1655,7 +1655,7 @@ it is now.
 
 ## Monad laws
 
-<img src="/assets/judgedog.png" class="right"
+<img src="./assets/judgedog.png" class="right"
 width="343" height="170"
 alt="the court finds you guilty of peeing all over everything" />
 

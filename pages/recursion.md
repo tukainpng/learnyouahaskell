@@ -7,7 +7,7 @@ title: Recursion
 
 <center>
 <a href="syntax-in-functions" class="prevlink">Syntax in Functions</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="higher-order-functions" class="nxtlink">Higher Order Functions</a>
 </center>
 
@@ -18,7 +18,7 @@ title: Recursion
 
 ## Hello recursion!
 
-<img src="/assets/recursion.png" class="left"
+<img src="./assets/recursion.png" class="left"
 width="250" height="179" alt="SOVIET RUSSIA" />
 
 We mention recursion briefly in the previous chapter. In this chapter,
@@ -140,7 +140,7 @@ maximum' (x:xs) = max x (maximum' xs)
 How's that for elegant! In essence, the maximum of a list is the max of
 the first element and the maximum of the tail.
 
-<img src="/assets/maxs.png" class="center"
+<img src="./assets/maxs.png" class="center"
 width="651" height="267" alt="max" />
 <span id="a-few-more-recursive-functions"></span>
 
@@ -200,7 +200,7 @@ take' _ []     = []
 take' n (x:xs) = x : take' (n-1) xs
 ```
 
-<img src="/assets/painter.png" class="right"
+<img src="./assets/painter.png" class="right"
 width="350" height="276" alt="painter" />
 
 The first pattern specifies that if we try to take a 0 or negative
@@ -317,7 +317,7 @@ child for Haskell. Therefore, let's implement it here, even though
 implementing quicksort in Haskell is considered really cheesy because
 everyone does it to showcase how elegant Haskell is.
 
-<img src="/assets/quickman.png" class="left"
+<img src="./assets/quickman.png" class="left"
 width="180" height="235" alt="quickman" />
 
 So, the type signature is going to be <span class="fixed">quicksort ::
@@ -369,7 +369,7 @@ two lists using the same function. Eventually, we'll break it up so much
 that we reach empty lists and an empty list is already sorted in a way,
 by virtue of being empty. Here's an illustration:
 
-<img src="/assets/quicksort.png" class="center"
+<img src="./assets/quicksort.png" class="center"
 width="799" height="332" alt="quicksort" />
 
 An element that is in place and won't move anymore is represented in
@@ -400,7 +400,7 @@ element of the list times the product of the rest of the list. The
 length of a list is one plus the length of the tail of the list.
 Ekcetera, ekcetera ...
 
-<img src="/assets/brain.png" class="left"
+<img src="./assets/brain.png" class="left"
 width="250" height="219" alt="brain" />
 
 Of course, these also have edge cases. Usually the edge case is some

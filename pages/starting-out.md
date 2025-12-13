@@ -7,7 +7,7 @@ title: Starting Out
 
 <center>
 <a href="introduction" class="prevlink">Introduction</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 <a href="types-and-typeclasses" class="nxtlink">Types and Typeclasses</a>
 </center>
 
@@ -18,7 +18,7 @@ title: Starting Out
 
 ## Ready, set, go!
 
-<img src="/assets/startingout.png" class="right"
+<img src="./assets/startingout.png" class="right"
 width="214" height="187" alt="egg" /> Alright, let's get started! If
 you're the sort of horrible person who doesn't read introductions to
 things and you skipped it, you might want to read the last section in
@@ -145,7 +145,7 @@ it between them. This is what we call an *infix* function. Most
 functions that aren't used with numbers are *prefix* functions. Let's
 take a look at them.
 
-<img src="/assets/ringring.png" class="right"
+<img src="./assets/ringring.png" class="right"
 width="160" height="161" alt="phoen" /> Functions are usually prefix so
 from now on we won't explicitly state that a function is of the prefix
 form, we'll just assume it. In most imperative languages functions are
@@ -311,7 +311,7 @@ doubleSmallNumber x = if x > 100
                         else x*2 
 ```
 
-<img src="/assets/baby.png" class="left"
+<img src="./assets/baby.png" class="left"
 width="140" height="211" alt="this is you" />
 
 Right here we introduced Haskell's if statement. You're probably
@@ -364,7 +364,7 @@ used interchangeably.
 
 ## An intro to lists
 
-<img src="/assets/list.png" class="left"
+<img src="./assets/list.png" class="left"
 width="150" height="103" alt="BUY A DOG" /> Much like shopping lists in
 the real world, lists in Haskell are very useful. It's the most used
 data structure and it can be used in a multitude of different ways to
@@ -544,7 +544,7 @@ ghci> init [5,4,3,2,1]
 
 If we think of a list as a monster, here's what's what.
 
-<img src="/assets/listmonster.png" class="center"
+<img src="./assets/listmonster.png" class="center"
 width="580" height="290" alt="list monster" />
 
 But what happens if we try to get the head of an empty list?
@@ -666,7 +666,7 @@ look at more list functions [later](modules#data-list)
 
 ## Texas ranges
 
-<img src="/assets/cowboy.png" class="right"
+<img src="./assets/cowboy.png" class="right"
 width="200" height="258" alt="draw" /> What if we want a list of all
 numbers between 1 and 20? Sure, we could just type them all out but
 obviously that's not a solution for gentlemen who demand excellence from
@@ -767,13 +767,13 @@ number of the same element in a list. <span class="fixed">replicate 3
 
 ## I'm a list comprehension
 
-<img src="/assets/kermit.png" class="left"
+<img src="./assets/kermit.png" class="left"
 width="180" height="156" alt="frog" /> If you've ever taken a course in
 mathematics, you've probably run into *set comprehensions*. They're
 normally used for building more specific sets out of general sets. A
 basic comprehension for a set that contains the first ten even natural
 numbers is ![set
-notation](/assets/setnotation.png). The part before
+notation](./assets/setnotation.png). The part before
 the pipe is called the output function, <span class="fixed">x</span> is
 the variable, <span class="fixed">N</span> is the input set and
 <span class="fixed">x &lt;= 10</span> is the predicate. That means that
@@ -937,7 +937,7 @@ lines, especially if they're nested.
 
 ## Tuples
 
-<img src="/assets/tuple.png" class="right"
+<img src="./assets/tuple.png" class="right"
 width="160" height="162" alt="tuples" />
 
 In some ways, tuples are like lists — they are a way to store several
@@ -1066,7 +1066,7 @@ ghci> zip [1..] ["apple", "orange", "cherry", "mango"]
 [(1,"apple"),(2,"orange"),(3,"cherry"),(4,"mango")]
 ```
 
-<img src="/assets/pythag.png" class="center"
+<img src="./assets/pythag.png" class="center"
 width="350" height="315" alt="look at meee" />
 
 Here's a problem that combines tuples and list comprehensions: which

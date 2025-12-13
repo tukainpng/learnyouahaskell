@@ -4,10 +4,10 @@ title: Zippers
 <center>
 <a href="for-a-few-monads-more" class="prevlink">For a Few Monads
   More</a>
-<a href="/pages/chapters">Table of contents</a>
+<a href="chapters">Table of contents</a>
 </center>
 
-<img src="/assets/60sdude.png" class="right" width="122" height="407"
+<img src="./assets/60sdude.png" class="right" width="122" height="407"
 alt="hi im chet" />
 
 While Haskell's purity comes with a whole bunch of benefits, it makes us
@@ -79,7 +79,7 @@ freeTree =
 
 And here's this tree represented graphically:
 
-<img src="/assets/pollywantsa.png" class="center" width="780" height="504"
+<img src="./assets/pollywantsa.png" class="center" width="780" height="504"
 alt="polly says her back hurts" />
 
 Notice that <span class="fixed">W</span> in the tree there? Say we want
@@ -178,7 +178,7 @@ nearby.
 
 ## A trail of breadcrumbs
 
-<img src="/assets/bread.png" class="right" width="321" height="250"
+<img src="./assets/bread.png" class="right" width="321" height="250"
 alt="whoop dee doo" />
 
 Okay, so for focusing on a sub-tree, we want something better than just
@@ -225,7 +225,7 @@ ghci> goLeft (goRight (freeTree, []))
 (Node 'W' (Node 'C' Empty Empty) (Node 'R' Empty Empty),[L,R])
 ```
 
-<img src="/assets/almostzipper.png" class="left" width="399" height="224"
+<img src="./assets/almostzipper.png" class="left" width="399" height="224"
 alt="almostthere" />
 
 Okay, so now we have a tree that has <span class="fixed">'W'</span> in
@@ -352,7 +352,7 @@ goUp (t, LeftCrumb x r:bs) = (Node x t r, bs)
 goUp (t, RightCrumb x l:bs) = (Node x l t, bs)
 ```
 
-<img src="/assets/asstronaut.png" class="left" width="511" height="433"
+<img src="./assets/asstronaut.png" class="left" width="511" height="433"
 alt="asstronaut" />
 
 We're focusing on the tree <span class="fixed">t</span> and we check
@@ -502,7 +502,7 @@ we defined our data type like so:
 data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
 ```
 
-<img src="/assets/picard.png" class="right" width="355" height="380"
+<img src="./assets/picard.png" class="right" width="355" height="380"
 alt="the best damn thing" />
 
 Contrast this with our definition of our binary tree and it's easy to
@@ -651,7 +651,7 @@ That's actually what my disk contains right now.
 
 ### A zipper for our file system
 
-<img src="/assets/spongedisk.png" class="right" width="243" height="271"
+<img src="./assets/spongedisk.png" class="right" width="243" height="271"
 alt="spongedisk" />
 
 Now that we have a file system, all we need is a zipper so we can zip
@@ -738,7 +738,7 @@ given name. That file has to be in the current focused folder. This
 function doesn't search all over the place, it just looks at the current
 folder.
 
-<img src="/assets/cool.png" class="left" width="205" height="197"
+<img src="./assets/cool.png" class="left" width="205" height="197"
 alt="wow cool great" />
 
 First we use <span class="fixed">break</span> to break the list of items
@@ -861,7 +861,7 @@ goLeft :: Zipper a -> Zipper a
 goLeft (Node x l r, bs) = (l, LeftCrumb x r:bs)
 ```
 
-<img src="/assets/bigtree.png" class="right" width="247" height="367"
+<img src="./assets/bigtree.png" class="right" width="247" height="367"
 alt="falling for you" />
 
 But what if the tree we're stepping off from is an empty tree? That is,
