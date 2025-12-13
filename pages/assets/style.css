@@ -13,6 +13,7 @@ h1 {
     font-family:georgia, Arial, serif;
     margin-bottom:15px;
     font-weight:normal;
+    margin-top: .8em;
 }
 h2 {
     font-size:20px;
@@ -60,6 +61,9 @@ center {
   justify-content: space-between !important;
   margin-top: 3em;
   margin-bottom: 1.5em;
+  position: absolute;
+  top: -6em;
+  width: 100%;
 }
 pre {
     color:black;
@@ -115,6 +119,7 @@ pre {
 #content {
     width:800px;
     margin:0px auto;
+    position: relative;
 }
 .introcontent {
     background-image:url(bg.png);
